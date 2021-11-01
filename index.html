@@ -184,10 +184,10 @@
             translateY: -50,
             duration: 2000,
             direction: 'reverse',
-            easing: 'linear',
-            delay: function(el, i) {
-			  return 600 * i;
-		    },
+            easing: 'easeInOutSine',
+            delay: function(el, i, l) {
+                return i * 600;
+            }
         });
     </script>
 </body>

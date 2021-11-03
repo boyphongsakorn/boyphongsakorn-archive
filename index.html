@@ -31,8 +31,59 @@
     </style>
 </head>
 <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">PWisetthon.com</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://pwisetthon.com">หน้าแรก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://boyphongsakorn.wordpress.com">บล็อก</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page"  href="https://archive.pwisetthon.com/">งานเก่า</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            อื่นๆ
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="https://github.com/boyphongsakorn">Github</a></li>
+                            <li><a class="dropdown-item" href="https://teamquadb.pwisetthon.com">TeamQuadB.in.th</a>
+                            </li>
+                            <!--li>
+                                <hr class="dropdown-divider">
+                            </!--li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li -->
+                        </ul>
+                    </li>
+                    <!--li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li-->
+                </ul>
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://contact.pwisetthon.com">ติดต่องาน</a>
+                    </li>
+                </ul>
+                <!--form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form-->
+            </div>
+        </div>
+    </nav>
+
     <div class="container">
-        <center><h1>Archive <i class="faot fas fa-archive"></i></h1></center>
+        <center><h1 class="mt-2">Archive <i class="faot fas fa-archive"></i></h1></center>
         <div class="list-group list-group-flush">
             <a href="https://1drv.ms/u/s!AjkBQYobNSUf1HEDq1OsyZpzLfpU?e=VRWFNV" class="list-group-item list-group-item-action">
                 <div class="row ">
@@ -181,12 +232,12 @@
         anime({
             targets: '.list-group-item',
             opacity: 0,
-            translateY: -50,
-            duration: 2000,
+            translateY: -25,
+            duration: 1000,
             direction: 'reverse',
             easing: 'easeInOutSine',
             delay: function(el, i, l) {
-                return i * 600;
+                return i * 300;
             }
         });
     </script>
